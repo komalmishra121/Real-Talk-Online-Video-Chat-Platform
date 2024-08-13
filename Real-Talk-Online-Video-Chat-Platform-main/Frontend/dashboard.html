@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <link rel="icon" href="./Images/fav_icon-bg.png" />
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/714346974b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="./Style/login.css.css"> -->
+
+
+    <title>Dashboard | Real-Talk</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Loader -->
+    <!-- <link rel="stylesheet" href="./styles/" />
+    <script src="./scripts/loaderTornado.js"></script> -->
+    <!-- Loader End-->
+  </head>
+  <body>
+    <!-- navbar -->
+    
+  <!-- <nav class="navbar">
+    <div class="navbar-brand">
+      <img id="image-home" src="./images/real_talk_blue.png" alt="Logo">
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a id="dash" href="#">Dashboard</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Feature</a></li>
+      <li><a href="#">Pricing</a></li>
+    </ul>
+    <div class="navbar-user">
+      <h2 id="showname"></h2>
+      <div class="navbar-buttons">
+        <button id="login" class="btn-login">Login</button>
+
+      </div>
+    </div>
+  </nav> -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a style=" color: white;font-size: 30px;" class="navbar-brand" href="./index.html">Real Talk</a>
+      <button style="color: white;" id="toggerId" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span  class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a style="color: white;" class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a  id="dash" style="cursor: pointer;" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#foo">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Feature</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <div class="navbar-user">
+          <h2 id="showname"></h2>
+          <div class="navbar-buttons">
+            <button id="login" class="btn-login">Login</button>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </nav>
+    <br /><br />
+    <!-- main content -->
+    <div id="main_dashboard">
+   
+      <div id="ïmg1">
+        <img
+          class="img1_main"
+          src="https://user-images.githubusercontent.com/115463536/229345353-f12c3416-fa09-4d7c-8190-a42273105e9a.gif"
+          alt=""
+        />
+      </div>
+      <div id="main_img_info">
+
+       
+        <a id="anchor" href="./room.html?type=videochat">
+          <div class="div_img_info">
+            <img
+              class="img_info"
+              src="https://user-images.githubusercontent.com/115463536/229345389-d7c5186e-d34c-46fa-a5e7-3b63815f9305.gif"
+              alt=""
+            />
+            <p>Video Call</p>
+          </div>
+        </a>
+        
+        <a id="anchor" href="./room.html?type=message">
+          <div class="div_img_info">
+            <img
+              class="img_info"
+              src="https://user-images.githubusercontent.com/115463536/229345461-fd213545-2b3c-4ae0-93f3-ef1f5e725eff.gif"
+              alt=""
+            />
+            <p>Message</p>
+          </div>
+        </a>
+        <a id="anchor" href="./index.html">
+          <div class="div_img_info">
+            <img
+              class="img_info"
+              src="https://user-images.githubusercontent.com/115463536/229345427-8a022b0e-2638-4ce3-b4e2-ffc94ba79745.gif"
+              alt=""
+            />
+            <p>Back To Home</p>
+          </div></a
+        >
+        <!-- <a href="./index.html"> -->
+          <spam>
+          <div class="div_img_info" id="logout" >
+            <img
+              class="img_info"
+              src="https://user-images.githubusercontent.com/115463536/229345490-98dd7120-789b-4411-899d-4a8ad9c84b5c.gif"
+              alt=""
+            />
+            <p id="show-here">Logout</p>
+          </div>
+        </spam>
+        <!-- </a> -->
+      </div>
+    </div>
+
+
+    <footer class="padding_4x " id="foo">
+      <div class="flex">
+        <section class="flex-content padding_1x">
+          <h3>About</h3>
+          <a href="#">Zoom Blog</a>
+          <a href="#">Customers</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
+          <a href="#">Integrations</a>
+          <a href="#">Partners</a>
+          <a href="#">Investors</a>
+          <a href="#">Real Talk Ventures</a>
+          <a href="#">Developer</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Download</h3>
+          <a href="#">Meetings Client</a>
+          <a href="#">Zoom Rooms Client</a>
+          <a href="#">Zoom Rooms Controller</a>
+          <a href="#">Browser Extension</a>
+          <a href="#">Outlook Plug-in</a>
+          <a href="#">iPhone/iPad App</a>
+          <a href="#">Android App</a>
+          <a href="#">Zoom Virtual Backgrounds</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Sales</h3>
+          <a href="#">1.888.799.9666</a>
+          <a href="#">Contact Sales</a>
+          <a href="#">Plans & Pricing</a>
+          <a href="#">Request a Demo</a>
+          <a href="#">Webinars and Events</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Support</h3>
+          <a href="#">Test Real Talk</a>
+          <a href="#">Account</a>
+          <a href="#">Support Center</a>
+          <a href="#">Learning Center</a>
+          <a href="#">Feedback</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Developer Support</a>
+          <a href="#">Legal Policies</a>
+        </section>
+        <section class="flex-content padding_1x">
+          <h3>Newsletter</h3>
+          <a>You can trust us. we only send promo offers,</a> <br />
+          <fieldset class="fixed_flex">
+            <input
+              type="email"
+              name="newsletter"
+              placeholder="Your Email Address"
+            />
+            <button class="btn btn_2">Subscribe</button>
+          </fieldset>
+        </section>
+      </div>
+      <div class="flex">
+        <section class="flex-content padding_1x">
+          <p>Copyright ©2023 All rights reserved || Real Talk ❤️</p>
+        </section>
+        <section class="flex-content padding_1x">
+          <a href="https://www.facebook.com/zoom"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/zoom"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/zoom/"
+            ><i class="fa fa-dribbble"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/zoom-video-communications/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </section>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>
+<script src="./scripts/dashbord.js"></script>
